@@ -14,6 +14,9 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControlA: UIPageControl!
     
+
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,6 +61,13 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.startTimer()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.stopTimer()
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if scrollView == self.scrollViewA {
@@ -80,4 +90,54 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
+    //开始拖拽时停止定时器
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.pauseScroll()
+        self.stopTimer()
+    }
+    
+    //拖拽结束后开启定时器
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        self.startTimer()
+    }
+    
+    //开启定时器
+    func startTimer() {
+        self.stopTimer()
+        
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.nextImage), userInfo: nil, repeats: true)
+    }
+    
+    //关闭定时器
+    func stopTimer() {
+        if timer != nil && (timer?.isValid)! {
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+    
+    /// 滚动到下一张图片
+    func nextImage()
+    {
+        let offsetX = scrollViewA.contentOffset.x
+        self.scrollViewA.setContentOffset(CGPoint(x: offsetX + UIScreen.main.bounds.width, y:0), animated: true)
+    }
+
+    ///停止滚动
+    func pauseScroll()
+    {
+//        let offset = self.scrollView!.contentOffset.x;
+//        let index = offset / self.imgWidth!
+//        //1表示没有滚动
+//        if index == 1
+//        {
+//            return
+//        }
+//        self.currentIndex = self.nextIndex
+//        self.pageControl?.currentPage = self.currentIndex!
+//        self.currentView?.frame = CGRect(x: self.imgWidth!, y: 0, width: self.imgWidth!, height: self.imgHeight!)
+//        self.currentView?.backgroundColor = self.nextView?.backgroundColor
+//        self.scrollView?.contentOffset = CGPoint(x: imgWidth!, y: 0)
+    }
+    
 }

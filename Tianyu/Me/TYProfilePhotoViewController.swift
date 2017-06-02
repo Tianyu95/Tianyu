@@ -25,6 +25,7 @@ class TYProfilePhotoViewController: UIViewController {
         
         self.mainScrollView.minimumZoomScale = 0.3
         self.mainScrollView.maximumZoomScale = 2.0
+        
     }
 
     override func didReceiveMemoryWarning() {
