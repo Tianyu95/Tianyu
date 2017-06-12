@@ -33,6 +33,7 @@ class TYTouchIdAuthenViewController: UIViewController {
                 } else {
                     print("验证失败: \(String(describing: error?.localizedDescription))")
                     //print("验证失败: \(error?.localizedDescription)")
+                                        
                     self.showprint(str: "验证失败: \(String(describing: error?.localizedDescription))")
                 }
             })

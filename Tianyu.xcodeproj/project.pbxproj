@@ -21,6 +21,7 @@
 		3D392DC31E41A45900ED5FCC /* ListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */; };
 		3D3C883A1E91EE4F00E3A134 /* TYGenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */; };
 		3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */; };
+		3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */; };
 		3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */; };
 		3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD50FC81E9C7C620024927B /* TYProfilePhotoViewController.swift */; };
 		3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */; };
@@ -47,6 +48,7 @@
 		3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListStoryboard.storyboard; sourceTree = "<group>"; };
 		3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYGenderTableViewController.swift; sourceTree = "<group>"; };
 		3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWhatUpTableViewController.swift; sourceTree = "<group>"; };
+		3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSetAuthorizationViewController.swift; sourceTree = "<group>"; };
 		3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYCodeListTableViewController.swift; sourceTree = "<group>"; };
 		3DD50FC81E9C7C620024927B /* TYProfilePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYProfilePhotoViewController.swift; sourceTree = "<group>"; };
 		3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMeTableViewController.swift; sourceTree = "<group>"; };
@@ -140,9 +142,18 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		3D9D74641EE10AC7001B87F0 /* SetAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */,
+			);
+			path = SetAuthorization;
+			sourceTree = "<group>";
+		};
 		3DF6BAF91E44234400EC33D9 /* CodeList */ = {
 			isa = PBXGroup;
 			children = (
+				3D9D74641EE10AC7001B87F0 /* SetAuthorization */,
 				3DFA5D441EDFF58100E6480B /* LocalAuthen */,
 				3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */,
 			);
@@ -266,6 +277,7 @@
 			files = (
 				3D392DAF1E4184EB00ED5FCC /* ViewController.swift in Sources */,
 				3D3C883A1E91EE4F00E3A134 /* TYGenderTableViewController.swift in Sources */,
+				3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */,
 				3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */,
 				3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */,
 				3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */,

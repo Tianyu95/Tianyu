@@ -10,7 +10,7 @@ import UIKit
 
 class TYCodeListTableViewController: UITableViewController {
 
-    let listName = ["指纹解锁","321","abc","bcd"]
+    let listName = ["指纹解锁","获取系统权限","abc","bcd"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +59,14 @@ class TYCodeListTableViewController: UITableViewController {
             let touchPage:TYTouchIdAuthenViewController = TYTouchIdAuthenViewController()
             touchPage.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(touchPage, animated: true)
+            
+            break
+        case 1://获取系统权限
+            let authPage:TYSetAuthorizationViewController = TYSetAuthorizationViewController()
+            authPage.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(authPage, animated: true)
+    
+            break
             
         default:
             return
