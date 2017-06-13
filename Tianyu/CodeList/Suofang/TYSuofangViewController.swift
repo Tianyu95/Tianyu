@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class TYSuofangViewController: UIViewController {
 
@@ -75,7 +76,22 @@ class TYSuofangViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //缩放动画
+//        UIView.animate(withDuration: 1, animations: {
+//            self.topView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+//        })
+
         
+        //弹性动画
+//        UIView.animate(withDuration: 2, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .allowUserInteraction, animations:
+//            {
+//                self.topView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+//        }, completion: nil)
+//        UIView.animate(withDuration: 2, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: .allowUserInteraction, animations:
+//            {
+//                self.topView.transform = CGAffineTransform(translationX: 0, y: 0)
+//        }, completion: nil)
+
         //混合动画
         UIView.animate(withDuration: 2, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: .allowUserInteraction, animations:
             {
