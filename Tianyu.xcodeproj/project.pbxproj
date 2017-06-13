@@ -23,6 +23,11 @@
 		3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */; };
 		3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */; };
 		3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */; };
+		3DA8817F1EEFAC5200D995D8 /* TYSuofangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8817E1EEFAC5200D995D8 /* TYSuofangViewController.swift */; };
+		3DA881841EEFAD8C00D995D8 /* launch-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA881801EEFAD8C00D995D8 /* launch-568@2x.png */; };
+		3DA881851EEFAD8C00D995D8 /* bad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA881811EEFAD8C00D995D8 /* bad@2x.png */; };
+		3DA881861EEFAD8C00D995D8 /* good@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA881821EEFAD8C00D995D8 /* good@2x.png */; };
+		3DA881871EEFAD8C00D995D8 /* great@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA881831EEFAD8C00D995D8 /* great@2x.png */; };
 		3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD50FC81E9C7C620024927B /* TYProfilePhotoViewController.swift */; };
 		3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */; };
 		3DF6BB081E44271200EC33D9 /* TYMyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */; };
@@ -50,6 +55,11 @@
 		3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWhatUpTableViewController.swift; sourceTree = "<group>"; };
 		3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSetAuthorizationViewController.swift; sourceTree = "<group>"; };
 		3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYCodeListTableViewController.swift; sourceTree = "<group>"; };
+		3DA8817E1EEFAC5200D995D8 /* TYSuofangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSuofangViewController.swift; sourceTree = "<group>"; };
+		3DA881801EEFAD8C00D995D8 /* launch-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-568@2x.png"; sourceTree = "<group>"; };
+		3DA881811EEFAD8C00D995D8 /* bad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad@2x.png"; sourceTree = "<group>"; };
+		3DA881821EEFAD8C00D995D8 /* good@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "good@2x.png"; sourceTree = "<group>"; };
+		3DA881831EEFAD8C00D995D8 /* great@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great@2x.png"; sourceTree = "<group>"; };
 		3DD50FC81E9C7C620024927B /* TYProfilePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYProfilePhotoViewController.swift; sourceTree = "<group>"; };
 		3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMeTableViewController.swift; sourceTree = "<group>"; };
 		3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMyProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -150,9 +160,22 @@
 			path = SetAuthorization;
 			sourceTree = "<group>";
 		};
+		3DA8817B1EEFAC0700D995D8 /* Suofang */ = {
+			isa = PBXGroup;
+			children = (
+				3DA881801EEFAD8C00D995D8 /* launch-568@2x.png */,
+				3DA881811EEFAD8C00D995D8 /* bad@2x.png */,
+				3DA881821EEFAD8C00D995D8 /* good@2x.png */,
+				3DA881831EEFAD8C00D995D8 /* great@2x.png */,
+				3DA8817E1EEFAC5200D995D8 /* TYSuofangViewController.swift */,
+			);
+			path = Suofang;
+			sourceTree = "<group>";
+		};
 		3DF6BAF91E44234400EC33D9 /* CodeList */ = {
 			isa = PBXGroup;
 			children = (
+				3DA8817B1EEFAC0700D995D8 /* Suofang */,
 				3D9D74641EE10AC7001B87F0 /* SetAuthorization */,
 				3DFA5D441EDFF58100E6480B /* LocalAuthen */,
 				3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */,
@@ -261,9 +284,13 @@
 				3D392DC31E41A45900ED5FCC /* ListStoryboard.storyboard in Resources */,
 				3D392DC11E41951900ED5FCC /* PersonalStoryboard.storyboard in Resources */,
 				3D392DB41E4184EB00ED5FCC /* Assets.xcassets in Resources */,
+				3DA881871EEFAD8C00D995D8 /* great@2x.png in Resources */,
 				3D392DB21E4184EB00ED5FCC /* Main.storyboard in Resources */,
 				3D1C98121EDEAD690077D1D2 /* s_pic4.png in Resources */,
+				3DA881841EEFAD8C00D995D8 /* launch-568@2x.png in Resources */,
 				3D1C98111EDEAD690077D1D2 /* s_pic3.png in Resources */,
+				3DA881861EEFAD8C00D995D8 /* good@2x.png in Resources */,
+				3DA881851EEFAD8C00D995D8 /* bad@2x.png in Resources */,
 				3D1C98101EDEAD690077D1D2 /* s_pic2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +306,7 @@
 				3D3C883A1E91EE4F00E3A134 /* TYGenderTableViewController.swift in Sources */,
 				3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */,
 				3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */,
+				3DA8817F1EEFAC5200D995D8 /* TYSuofangViewController.swift in Sources */,
 				3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */,
 				3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */,
 				3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */,
