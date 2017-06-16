@@ -162,21 +162,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQp-Fd-YEY">
+                                <rect key="frame" x="0.0" y="281.5" width="125" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mQp-Fd-YEY" secondAttribute="height" multiplier="5:4" id="ayx-ee-Fq9"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDp-cG-HBo">
+                                <rect key="frame" x="125" y="281.5" width="125" height="100"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5l-4q-LE2">
+                                <rect key="frame" x="250" y="281.5" width="125" height="100"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a1E-dY-xPJ" firstAttribute="top" secondItem="rET-t0-Y3T" secondAttribute="bottom" id="4Cv-hS-YrQ"/>
+                            <constraint firstItem="XDp-cG-HBo" firstAttribute="top" secondItem="mQp-Fd-YEY" secondAttribute="top" id="4Wj-in-f0k"/>
                             <constraint firstAttribute="trailing" secondItem="a1E-dY-xPJ" secondAttribute="trailing" id="874-A3-EV8"/>
+                            <constraint firstItem="mQp-Fd-YEY" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="HUc-Q6-lLg"/>
+                            <constraint firstItem="XDp-cG-HBo" firstAttribute="width" secondItem="mQp-Fd-YEY" secondAttribute="width" id="IVD-qF-70f"/>
                             <constraint firstItem="ZQX-OW-mqX" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="Ii9-nj-pse"/>
                             <constraint firstItem="a1E-dY-xPJ" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="KVm-j3-LR1"/>
+                            <constraint firstItem="mQp-Fd-YEY" firstAttribute="top" secondItem="ZQX-OW-mqX" secondAttribute="bottom" id="Mqs-W7-S7E"/>
                             <constraint firstItem="gBz-57-yOf" firstAttribute="bottom" secondItem="a1E-dY-xPJ" secondAttribute="bottom" id="N4S-QM-pZx"/>
+                            <constraint firstItem="XDp-cG-HBo" firstAttribute="height" secondItem="mQp-Fd-YEY" secondAttribute="height" id="P5E-fD-KBN"/>
+                            <constraint firstAttribute="trailing" secondItem="I5l-4q-LE2" secondAttribute="trailing" id="QV6-J2-8zM"/>
                             <constraint firstItem="gBz-57-yOf" firstAttribute="centerX" secondItem="8In-bj-65c" secondAttribute="centerX" id="SxX-96-g95"/>
+                            <constraint firstItem="XDp-cG-HBo" firstAttribute="leading" secondItem="mQp-Fd-YEY" secondAttribute="trailing" id="U3T-bI-2Zw"/>
+                            <constraint firstItem="I5l-4q-LE2" firstAttribute="width" secondItem="mQp-Fd-YEY" secondAttribute="width" id="YAv-Fi-8DG"/>
                             <constraint firstAttribute="trailing" secondItem="ZQX-OW-mqX" secondAttribute="trailing" id="Yeh-xK-xXZ"/>
                             <constraint firstItem="ZQX-OW-mqX" firstAttribute="top" secondItem="a1E-dY-xPJ" secondAttribute="bottom" id="aK1-aV-cRH"/>
+                            <constraint firstItem="I5l-4q-LE2" firstAttribute="top" secondItem="mQp-Fd-YEY" secondAttribute="top" id="d6p-7h-e9Z"/>
+                            <constraint firstItem="I5l-4q-LE2" firstAttribute="leading" secondItem="XDp-cG-HBo" secondAttribute="trailing" id="pyd-kw-zr1"/>
+                            <constraint firstItem="I5l-4q-LE2" firstAttribute="height" secondItem="mQp-Fd-YEY" secondAttribute="height" id="tX5-gY-S7y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="AHc-6P-NHi"/>
                     <connections>
+                        <outlet property="btnA" destination="mQp-Fd-YEY" id="1P9-Wb-5xW"/>
+                        <outlet property="btnB" destination="XDp-cG-HBo" id="4gl-Y2-GWA"/>
+                        <outlet property="btnC" destination="I5l-4q-LE2" id="5cb-nb-wvv"/>
                         <outlet property="horseBgLabel" destination="ZQX-OW-mqX" id="vkN-KD-6Ed"/>
                         <outlet property="pageControlA" destination="gBz-57-yOf" id="mqu-8e-Nny"/>
                         <outlet property="scrollViewA" destination="a1E-dY-xPJ" id="i2Z-va-MgO"/>

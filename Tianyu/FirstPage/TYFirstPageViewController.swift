@@ -14,18 +14,19 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControlA: UIPageControl!
     var timer: Timer?
 
+    @IBOutlet weak var btnA: UIButton!
+    @IBOutlet weak var btnB: UIButton!
+    @IBOutlet weak var btnC: UIButton!
     
     @IBOutlet weak var horseBgLabel: UILabel!
     var contentLabel : UILabel?
     var timeHorse : Timer?
     var count = 0
-    var titleArray = ["美媒：建造世界最大望远镜计划掀起争论",
+    var titleArray = ["美媒：建造世界最大望远镜计划掀起争论!",
                       "开车必备！新手上路的35个驾驶技巧！",
                       "每天一万步，向着夏日好身材，一起动起来！",
                       "10.5英寸iPad Pro实测支持29W快充.",
                       "时间顺流而下，生活逆流而上...",
-                      "80%的时间都是和搭建页面。",
-                      "写业务逻辑、网络请求打交道。",
                       "世界最大4K电视：262英寸屏幕 重1600斤！"]
     
     
@@ -72,21 +73,24 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
         
         
         //horse Race Lamp//////////////////////
-        contentLabel = UILabel(frame: CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: self.horseBgLabel.frame.size.width, height: self.horseBgLabel.frame.size.height))
+        contentLabel = UILabel()
+        contentLabel?.frame = CGRect(x: self.horseBgLabel.frame.size.width+40, y: 0, width: self.horseBgLabel.frame.size.width, height: self.horseBgLabel.frame.size.height)
+
         contentLabel?.text = titleArray[0]
         contentLabel?.textAlignment = .left
         contentLabel?.textColor = UIColor.black
-        contentLabel?.font = UIFont.systemFont(ofSize: 20)
+        contentLabel?.font = UIFont.systemFont(ofSize: 16)
         horseBgLabel.addSubview(contentLabel!)
+        /////////////////////////////////////////
         
-        self.timeHorse = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(self.nextLabel), userInfo: nil, repeats: true)
-        UIView.animate(withDuration: 4.0, delay: 4.0, options: [.curveEaseIn, .repeat], animations: {
-            var frame = self.contentLabel?.frame
-            frame?.origin.x = (frame?.origin.x)! - self.horseBgLabel.frame.size.width - (self.contentLabel?.frame.size.width)!
-            self.contentLabel?.frame = frame!
-        }, completion: nil)
-        
-        
+        let mycolor = UIColor.lightGray
+        btnA.layer.borderWidth = 1
+        btnB.layer.borderWidth = 1
+        btnC.layer.borderWidth = 1
+        btnA.layer.borderColor = mycolor.cgColor
+        btnB.layer.borderColor = mycolor.cgColor
+        btnC.layer.borderColor = mycolor.cgColor
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,9 +100,15 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         self.startTimer()
+        
+        self.startHorse()
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.stopTimer()
+        
+        self.stopHorse()
+
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -147,6 +157,7 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
             timer?.invalidate()
             timer = nil
         }
+        
     }
     
     /// 滚动到下一张图片
@@ -174,6 +185,29 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
+    
+    
+    
+    func startHorse() {
+        contentLabel?.frame = CGRect(x: self.horseBgLabel.frame.size.width+40, y: 0, width: self.horseBgLabel.frame.size.width, height: self.horseBgLabel.frame.size.height)
+        
+        self.timeHorse = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(self.nextLabel), userInfo: nil, repeats: true)
+        UIView.animate(withDuration: 4.0, delay: 4.0, options: [.curveEaseIn, .repeat], animations: {
+            var frame = self.contentLabel?.frame
+            frame?.origin.x = (frame?.origin.x)! - self.horseBgLabel.frame.size.width - (self.contentLabel?.frame.size.width)!
+            self.contentLabel?.frame = frame!
+        }, completion: nil)
+
+        
+    }
+    func stopHorse() {
+        
+        if timeHorse != nil && (timeHorse?.isValid)! {
+            timeHorse?.invalidate()
+            timeHorse = nil
+        }
+        
+    }
     
     func nextLabel()  {
         let index = self.count % self.titleArray.count
