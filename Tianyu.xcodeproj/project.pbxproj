@@ -21,6 +21,7 @@
 		3D392DC31E41A45900ED5FCC /* ListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */; };
 		3D3C883A1E91EE4F00E3A134 /* TYGenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */; };
 		3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */; };
+		3D71442D1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71442C1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift */; };
 		3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */; };
 		3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */; };
 		3DA8817F1EEFAC5200D995D8 /* TYSuofangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8817E1EEFAC5200D995D8 /* TYSuofangViewController.swift */; };
@@ -53,6 +54,7 @@
 		3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListStoryboard.storyboard; sourceTree = "<group>"; };
 		3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYGenderTableViewController.swift; sourceTree = "<group>"; };
 		3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWhatUpTableViewController.swift; sourceTree = "<group>"; };
+		3D71442C1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHorseRaceLampViewController.swift; sourceTree = "<group>"; };
 		3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSetAuthorizationViewController.swift; sourceTree = "<group>"; };
 		3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYCodeListTableViewController.swift; sourceTree = "<group>"; };
 		3DA8817E1EEFAC5200D995D8 /* TYSuofangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSuofangViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		3D71442B1EF35DCD005FB882 /* HorseRaceLamp */ = {
+			isa = PBXGroup;
+			children = (
+				3D71442C1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift */,
+			);
+			path = HorseRaceLamp;
+			sourceTree = "<group>";
+		};
 		3D9D74641EE10AC7001B87F0 /* SetAuthorization */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		3DF6BAF91E44234400EC33D9 /* CodeList */ = {
 			isa = PBXGroup;
 			children = (
+				3D71442B1EF35DCD005FB882 /* HorseRaceLamp */,
 				3DA8817B1EEFAC0700D995D8 /* Suofang */,
 				3D9D74641EE10AC7001B87F0 /* SetAuthorization */,
 				3DFA5D441EDFF58100E6480B /* LocalAuthen */,
@@ -312,6 +323,7 @@
 				3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */,
 				3DF6BB081E44271200EC33D9 /* TYMyProfileTableViewController.swift in Sources */,
 				3D392DAD1E4184EB00ED5FCC /* AppDelegate.swift in Sources */,
+				3D71442D1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift in Sources */,
 				3D1C98091EDEA9F80077D1D2 /* TYFirstPageViewController.swift in Sources */,
 				3DFA5D461EDFF5E100E6480B /* TYTouchIdAuthenViewController.swift in Sources */,
 				3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */,

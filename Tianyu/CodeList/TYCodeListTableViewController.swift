@@ -10,7 +10,7 @@ import UIKit
 
 class TYCodeListTableViewController: UITableViewController {
 
-    let listName = ["指纹解锁","获取系统权限","缩放动画","bcd"]
+    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,10 +67,18 @@ class TYCodeListTableViewController: UITableViewController {
             self.navigationController?.pushViewController(authPage, animated: true)
             break
             
-        case 2://
+        case 2://缩放动画
             let suofang = TYSuofangViewController()
             suofang.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(suofang, animated: true)
+            
+            break
+            
+        case 3://跑马灯展示
+            let horsePage = TYHorseRaceLampViewController()
+            horsePage.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(horsePage, animated: true)
+            
             
             break
         default:
