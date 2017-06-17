@@ -78,7 +78,7 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
 
         contentLabel?.text = titleArray[0]
         contentLabel?.textAlignment = .left
-        contentLabel?.textColor = UIColor.black
+        contentLabel?.textColor = UIColor.orange
         contentLabel?.font = UIFont.systemFont(ofSize: 16)
         horseBgLabel.addSubview(contentLabel!)
         /////////////////////////////////////////
@@ -216,6 +216,40 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
         if self.count == self.titleArray.count {
             self.count = 0
         }
+    }
+    
+    
+    @IBAction func htmlbtnAction(_ sender: Any) {
+        
+        let htmlPage = TYWebViewController()
+        htmlPage.hidesBottomBarWhenPushed = true
+        htmlPage.title = "Tianyu"
+        htmlPage.pathStr = "<h1>欢迎来到：<a href='http://news.sina.com.cn/'>Tianyu的空间</a></h1>"
+        htmlPage.webType = loadType.html
+        self.navigationController?.pushViewController(htmlPage, animated: true)
+
+    }
+
+    
+    @IBAction func weibobtnAction(_ sender: Any) {
+        
+        let weibopage = TYWebViewController()
+        weibopage.hidesBottomBarWhenPushed = true
+        weibopage.title = "Weibo"
+        weibopage.pathStr = "http://weibo.com/cty95"
+        weibopage.webType = loadType.internet
+        self.navigationController?.pushViewController(weibopage, animated: true)
+    }
+    
+    @IBAction func jianlibtnAction(_ sender: Any) {
+        
+        let jianliPage = TYWebViewController()
+        jianliPage.hidesBottomBarWhenPushed = true
+        jianliPage.title = "Tianyu"
+        jianliPage.pathStr = "TianyuiOS"
+        jianliPage.webType = loadType.pdf
+        self.navigationController?.pushViewController(jianliPage, animated: true)
         
     }
+    
 }

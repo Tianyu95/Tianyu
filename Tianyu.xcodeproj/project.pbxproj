@@ -21,6 +21,8 @@
 		3D392DC31E41A45900ED5FCC /* ListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */; };
 		3D3C883A1E91EE4F00E3A134 /* TYGenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */; };
 		3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */; };
+		3D5C740E1EF51E730029D521 /* TYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C740D1EF51E730029D521 /* TYWebViewController.swift */; };
+		3D5C74101EF5229C0029D521 /* TianyuiOS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C740F1EF5229C0029D521 /* TianyuiOS.pdf */; };
 		3D71442D1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71442C1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift */; };
 		3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */; };
 		3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */; };
@@ -54,6 +56,8 @@
 		3D392DC21E41A45900ED5FCC /* ListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListStoryboard.storyboard; sourceTree = "<group>"; };
 		3D3C88391E91EE4F00E3A134 /* TYGenderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYGenderTableViewController.swift; sourceTree = "<group>"; };
 		3D40FED91E44CC3C005613C9 /* TYWhatUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWhatUpTableViewController.swift; sourceTree = "<group>"; };
+		3D5C740D1EF51E730029D521 /* TYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWebViewController.swift; sourceTree = "<group>"; };
+		3D5C740F1EF5229C0029D521 /* TianyuiOS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TianyuiOS.pdf; sourceTree = "<group>"; };
 		3D71442C1EF35DE7005FB882 /* TYHorseRaceLampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHorseRaceLampViewController.swift; sourceTree = "<group>"; };
 		3D9D74651EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYSetAuthorizationViewController.swift; sourceTree = "<group>"; };
 		3DA343FD1EDFE025007626E3 /* TYCodeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYCodeListTableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			children = (
 				3D1C980A1EDEAD690077D1D2 /* spics */,
 				3D1C98081EDEA9F80077D1D2 /* TYFirstPageViewController.swift */,
+				3D5C740D1EF51E730029D521 /* TYWebViewController.swift */,
+				3D5C740F1EF5229C0029D521 /* TianyuiOS.pdf */,
 			);
 			path = FirstPage;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				3DA881871EEFAD8C00D995D8 /* great@2x.png in Resources */,
 				3D392DB21E4184EB00ED5FCC /* Main.storyboard in Resources */,
 				3D1C98121EDEAD690077D1D2 /* s_pic4.png in Resources */,
+				3D5C74101EF5229C0029D521 /* TianyuiOS.pdf in Resources */,
 				3DA881841EEFAD8C00D995D8 /* launch-568@2x.png in Resources */,
 				3D1C98111EDEAD690077D1D2 /* s_pic3.png in Resources */,
 				3DA881861EEFAD8C00D995D8 /* good@2x.png in Resources */,
@@ -318,6 +325,7 @@
 				3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */,
 				3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */,
 				3DA8817F1EEFAC5200D995D8 /* TYSuofangViewController.swift in Sources */,
+				3D5C740E1EF51E730029D521 /* TYWebViewController.swift in Sources */,
 				3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */,
 				3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */,
 				3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */,

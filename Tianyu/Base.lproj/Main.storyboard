@@ -179,18 +179,51 @@
                                 <rect key="frame" x="250" y="281.5" width="125" height="100"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4g-kk-ufg">
+                                <rect key="frame" x="0.0" y="381.5" width="375" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="                 HTML">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="htmlbtnAction:" destination="LTy-zm-v6B" eventType="touchUpInside" id="JiI-5P-9Bi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-YE-NdP">
+                                <rect key="frame" x="0.0" y="460.5" width="375" height="78.5"/>
+                                <state key="normal" title="Button" image="TianyuWeibo"/>
+                                <connections>
+                                    <action selector="weibobtnAction:" destination="LTy-zm-v6B" eventType="touchUpInside" id="SfY-2a-ORJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ci-vv-ldw">
+                                <rect key="frame" x="0.0" y="539" width="375" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="               Tianyu简历">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jianlibtnAction:" destination="LTy-zm-v6B" eventType="touchUpInside" id="jvc-BI-Ja3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a1E-dY-xPJ" firstAttribute="top" secondItem="rET-t0-Y3T" secondAttribute="bottom" id="4Cv-hS-YrQ"/>
                             <constraint firstItem="XDp-cG-HBo" firstAttribute="top" secondItem="mQp-Fd-YEY" secondAttribute="top" id="4Wj-in-f0k"/>
                             <constraint firstAttribute="trailing" secondItem="a1E-dY-xPJ" secondAttribute="trailing" id="874-A3-EV8"/>
+                            <constraint firstItem="3Ci-vv-ldw" firstAttribute="height" secondItem="e4g-kk-ufg" secondAttribute="height" id="B6Y-0M-zAZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1pf-YE-NdP" secondAttribute="trailing" id="Dg3-dz-rib"/>
                             <constraint firstItem="mQp-Fd-YEY" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="HUc-Q6-lLg"/>
                             <constraint firstItem="XDp-cG-HBo" firstAttribute="width" secondItem="mQp-Fd-YEY" secondAttribute="width" id="IVD-qF-70f"/>
+                            <constraint firstItem="1pf-YE-NdP" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="Ii1-tQ-ROi"/>
                             <constraint firstItem="ZQX-OW-mqX" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="Ii9-nj-pse"/>
                             <constraint firstItem="a1E-dY-xPJ" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="KVm-j3-LR1"/>
                             <constraint firstItem="mQp-Fd-YEY" firstAttribute="top" secondItem="ZQX-OW-mqX" secondAttribute="bottom" id="Mqs-W7-S7E"/>
                             <constraint firstItem="gBz-57-yOf" firstAttribute="bottom" secondItem="a1E-dY-xPJ" secondAttribute="bottom" id="N4S-QM-pZx"/>
+                            <constraint firstItem="3Ci-vv-ldw" firstAttribute="top" secondItem="1pf-YE-NdP" secondAttribute="bottom" id="Ngq-T0-tnc"/>
                             <constraint firstItem="XDp-cG-HBo" firstAttribute="height" secondItem="mQp-Fd-YEY" secondAttribute="height" id="P5E-fD-KBN"/>
                             <constraint firstAttribute="trailing" secondItem="I5l-4q-LE2" secondAttribute="trailing" id="QV6-J2-8zM"/>
                             <constraint firstItem="gBz-57-yOf" firstAttribute="centerX" secondItem="8In-bj-65c" secondAttribute="centerX" id="SxX-96-g95"/>
@@ -199,8 +232,16 @@
                             <constraint firstAttribute="trailing" secondItem="ZQX-OW-mqX" secondAttribute="trailing" id="Yeh-xK-xXZ"/>
                             <constraint firstItem="ZQX-OW-mqX" firstAttribute="top" secondItem="a1E-dY-xPJ" secondAttribute="bottom" id="aK1-aV-cRH"/>
                             <constraint firstItem="I5l-4q-LE2" firstAttribute="top" secondItem="mQp-Fd-YEY" secondAttribute="top" id="d6p-7h-e9Z"/>
+                            <constraint firstItem="e4g-kk-ufg" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="dpJ-1q-ms9"/>
+                            <constraint firstItem="2fP-CD-b4d" firstAttribute="top" secondItem="3Ci-vv-ldw" secondAttribute="bottom" id="fEu-8z-JCq"/>
+                            <constraint firstItem="3Ci-vv-ldw" firstAttribute="leading" secondItem="8In-bj-65c" secondAttribute="leading" id="iFb-Xk-HCd"/>
+                            <constraint firstItem="1pf-YE-NdP" firstAttribute="top" secondItem="e4g-kk-ufg" secondAttribute="bottom" id="jx9-x2-tgF"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ci-vv-ldw" secondAttribute="trailing" id="ldI-eU-JIt"/>
+                            <constraint firstItem="1pf-YE-NdP" firstAttribute="height" secondItem="e4g-kk-ufg" secondAttribute="height" id="nGA-Dd-pC6"/>
+                            <constraint firstItem="e4g-kk-ufg" firstAttribute="top" secondItem="mQp-Fd-YEY" secondAttribute="bottom" id="nTN-Kp-Hu4"/>
                             <constraint firstItem="I5l-4q-LE2" firstAttribute="leading" secondItem="XDp-cG-HBo" secondAttribute="trailing" id="pyd-kw-zr1"/>
                             <constraint firstItem="I5l-4q-LE2" firstAttribute="height" secondItem="mQp-Fd-YEY" secondAttribute="height" id="tX5-gY-S7y"/>
+                            <constraint firstAttribute="trailing" secondItem="e4g-kk-ufg" secondAttribute="trailing" id="uh2-dV-WfY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="AHc-6P-NHi"/>
@@ -219,6 +260,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TianyuWeibo" width="621" height="131"/>
         <image name="tabbar_home" width="30" height="30"/>
         <image name="tabbar_list" width="30" height="30"/>
         <image name="tabbar_me" width="30" height="30"/>
