@@ -224,7 +224,7 @@ class TYFirstPageViewController: UIViewController, UIScrollViewDelegate {
         let htmlPage = TYWebViewController()
         htmlPage.hidesBottomBarWhenPushed = true
         htmlPage.title = "Tianyu"
-        htmlPage.pathStr = "<h1>欢迎来到：<a href='http://news.sina.com.cn/'>Tianyu的空间</a></h1>"
+        htmlPage.pathStr = "<h1>欢迎来到：<a href='http://news.sina.com.cn/'>Tianyu的空间</a></h1> <br> <a href='itms-apps://itunes.apple.com/cn/app/id350962117?mt=8'>To App</a>"
         htmlPage.webType = loadType.html
         self.navigationController?.pushViewController(htmlPage, animated: true)
 
