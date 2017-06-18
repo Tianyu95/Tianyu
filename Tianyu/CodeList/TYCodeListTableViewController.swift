@@ -94,6 +94,11 @@ class TYCodeListTableViewController: UITableViewController {
 //            stockChatPage.hidesBottomBarWhenPushed = true
 //            self.navigationController?.pushViewController(stockChatPage, animated: true)
 
+            let firstPage = OnboardingContentViewController(title: "Page Title", body: "Page body goes here.", image: UIImage(named: "icon"), buttonText: "Text For Button") { () -> Void in
+                // do something here when users press the button, like ask for location services permissions, register for push notifications, connect to social media, or finish the onboarding process
+            }
+
+            self.navigationController?.pushViewController(firstPage, animated: true)
             break
             
         default:

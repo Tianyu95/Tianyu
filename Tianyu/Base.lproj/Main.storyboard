@@ -95,7 +95,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="aY7-C5-Uue">
             <objects>
-                <tabBarController id="iAX-qM-Bit" userLabel="Main Tab Bar Controller" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBar" id="iAX-qM-Bit" userLabel="Main Tab Bar Controller" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Fs8-63-61Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
