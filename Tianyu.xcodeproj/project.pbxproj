@@ -35,6 +35,10 @@
 		3DD5C0A61EF613C000527F68 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5C0A21EF613C000527F68 /* OnboardingContentViewController.m */; };
 		3DD5C0AC1EF616F200527F68 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5C0AB1EF616F200527F68 /* OnboardingViewController.m */; };
 		3DD5C0B11EF6280700527F68 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B01EF626A600527F68 /* video3.mp4 */; };
+		3DD5C0B31EF640A500527F68 /* sun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B21EF640A500527F68 /* sun.mp4 */; };
+		3DD5C0B71EF640B400527F68 /* space age.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B41EF640B400527F68 /* space age.ttf */; };
+		3DD5C0B81EF640B400527F68 /* sf-outer-limits.upright.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B51EF640B400527F68 /* sf-outer-limits.upright.ttf */; };
+		3DD5C0B91EF640B400527F68 /* nasalization rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B61EF640B400527F68 /* nasalization rg.ttf */; };
 		3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */; };
 		3DF6BB081E44271200EC33D9 /* TYMyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */; };
 		3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB091E44276400EC33D9 /* TYNameTableViewController.swift */; };
@@ -77,6 +81,10 @@
 		3DD5C0AA1EF616F200527F68 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
 		3DD5C0AB1EF616F200527F68 /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
 		3DD5C0B01EF626A600527F68 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		3DD5C0B21EF640A500527F68 /* sun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun.mp4; sourceTree = "<group>"; };
+		3DD5C0B41EF640B400527F68 /* space age.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "space age.ttf"; sourceTree = "<group>"; };
+		3DD5C0B51EF640B400527F68 /* sf-outer-limits.upright.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-outer-limits.upright.ttf"; sourceTree = "<group>"; };
+		3DD5C0B61EF640B400527F68 /* nasalization rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nasalization rg.ttf"; sourceTree = "<group>"; };
 		3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMeTableViewController.swift; sourceTree = "<group>"; };
 		3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMyProfileTableViewController.swift; sourceTree = "<group>"; };
 		3DF6BB091E44276400EC33D9 /* TYNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYNameTableViewController.swift; sourceTree = "<group>"; };
@@ -147,7 +155,11 @@
 				3D392DAE1E4184EB00ED5FCC /* ViewController.swift */,
 				3D392DB01E4184EB00ED5FCC /* Main.storyboard */,
 				3DD5C0A81EF6157400527F68 /* Swift_ObjectiveC-Bridging-Header.h */,
+				3DD5C0B41EF640B400527F68 /* space age.ttf */,
+				3DD5C0B51EF640B400527F68 /* sf-outer-limits.upright.ttf */,
+				3DD5C0B61EF640B400527F68 /* nasalization rg.ttf */,
 				3DD5C0B01EF626A600527F68 /* video3.mp4 */,
+				3DD5C0B21EF640A500527F68 /* sun.mp4 */,
 				3DF6BAFD1E44245300EC33D9 /* MainViewController */,
 				3D392DB31E4184EB00ED5FCC /* Assets.xcassets */,
 				3D392DB51E4184EB00ED5FCC /* LaunchScreen.storyboard */,
@@ -339,8 +351,12 @@
 				3D1C98121EDEAD690077D1D2 /* s_pic4.png in Resources */,
 				3D5C74101EF5229C0029D521 /* TianyuiOS.pdf in Resources */,
 				3DA881841EEFAD8C00D995D8 /* launch-568@2x.png in Resources */,
+				3DD5C0B81EF640B400527F68 /* sf-outer-limits.upright.ttf in Resources */,
 				3D1C98111EDEAD690077D1D2 /* s_pic3.png in Resources */,
+				3DD5C0B91EF640B400527F68 /* nasalization rg.ttf in Resources */,
 				3DA881861EEFAD8C00D995D8 /* good@2x.png in Resources */,
+				3DD5C0B31EF640A500527F68 /* sun.mp4 in Resources */,
+				3DD5C0B71EF640B400527F68 /* space age.ttf in Resources */,
 				3DA881851EEFAD8C00D995D8 /* bad@2x.png in Resources */,
 				3DD5C0B11EF6280700527F68 /* video3.mp4 in Resources */,
 				3D1C98101EDEAD690077D1D2 /* s_pic2.png in Resources */,

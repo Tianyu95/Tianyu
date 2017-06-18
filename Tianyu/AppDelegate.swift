@@ -40,7 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //            self.window?.rootViewController = guideVC
 
-            self.window?.rootViewController = self.generateStandardOnboardingVC()
+//            self.window?.rootViewController = self.generateStandardOnboardingVC()
+            self.window?.rootViewController = self.generateMovieOnboardingVC()
         }
         
         
@@ -87,14 +88,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Video
         let file = Bundle.main.path(forResource: "video3", ofType: "mp4")
 //        let movieURL = URL.init(fileURLWithPath: file!)
-        let movieURLbbb = NSURL(fileURLWithPath: file!)
+        let movieURL = NSURL(fileURLWithPath: file!)
         
-        let onboardingVC = OnboardingViewController(backgroundVideoURL: movieURLbbb as URL!, contents: [firstPage, secondPage, thirdPage])
+        let onboardingVC = OnboardingViewController(backgroundVideoURL: movieURL as URL!, contents: [firstPage, secondPage, thirdPage])
         
         return onboardingVC!
     }
     
   
+    func generateMovieOnboardingVC() -> OnboardingViewController {
+        
+        let firstPage = OnboardingContentViewController(title: "Everything Under The Sun", body: "The temperature of the photosphere is over 10,000°F.", image: nil, buttonText: nil, action: nil)
+        firstPage.topPadding = -15
+        firstPage.underTitlePadding = 320
+        firstPage.titleLabel.textColor = UIColor(colorLiteralRed: 239/255.0, green: 88/255.0, blue: 35/255.0, alpha: 1.0)
+        firstPage.titleLabel.font = UIFont(name: "SFOuterLimitsUpright", size: 38)
+        firstPage.bodyLabel.textColor = UIColor(colorLiteralRed: 239/255.0, green: 88/255.0, blue: 35/255.0, alpha: 1.0)
+        firstPage.bodyLabel.font = UIFont(name: "NasalizationRg-Regular", size: 18)
+
+        let secondPage = OnboardingContentViewController(title: "Every Second", body: "600 million tons of protons are converted into helium atoms.", image: nil, buttonText: nil, action: nil)
+        secondPage.underTitlePadding = 330;
+        secondPage.topPadding = 0;
+        secondPage.titleLabel.font = UIFont(name: "SFOuterLimitsUpright", size: 38)
+        secondPage.titleLabel.textColor = UIColor(colorLiteralRed: 251/255.0, green:176/255.0, blue:59/255.0, alpha:1.0)
+
+        secondPage.bodyLabel.textColor = UIColor(colorLiteralRed: 251/255.0, green:176/255.0, blue:59/255.0, alpha:1.0)
+        secondPage.bodyLabel.font = UIFont(name: "NasalizationRg-Regular", size: 18.0)
+
+        
+        let thirdPage = OnboardingContentViewController(title: "We're All Star Stuff", body: "Our very bodies consist of the same chemical elements found in the most distant nebulae, and our activities are guided by the same universal rules.", image: nil, buttonText: "Explore the universe") { 
+            self.setupNormalRootViewController()
+        }
+        thirdPage.topPadding = 10;
+        thirdPage.underTitlePadding = 320;
+        thirdPage.bottomPadding = -10;
+        thirdPage.titleLabel.font = UIFont(name: "SFOuterLimitsUpright", size: 38)
+        thirdPage.titleLabel.textColor = UIColor(colorLiteralRed: 58/255.0, green: 105/255.0, blue: 136/255.0, alpha: 1.0)
+        
+        thirdPage.bodyLabel.textColor = UIColor(colorLiteralRed: 58/255.0, green: 105/255.0, blue: 136/255.0, alpha: 1.0)
+        thirdPage.bodyLabel.font = UIFont(name: "NasalizationRg-Regular", size: 15)
+
+        thirdPage.actionButton.setTitleColor(UIColor(colorLiteralRed: 239/255.0, green: 88/255.0, blue: 35/255.0, alpha: 1.0), for: UIControlState.normal)
+        thirdPage.actionButton.titleLabel?.font = UIFont(name: "SpaceAge", size: 20.0)
+
+        // Video
+        let file = Bundle.main.path(forResource: "sun", ofType: "mp4")
+        //        let movieURL = URL.init(fileURLWithPath: file!)
+        let movieURL = NSURL(fileURLWithPath: file!)
+        
+        let onboardingVC = OnboardingViewController(backgroundVideoURL: movieURL as URL!, contents: [firstPage, secondPage, thirdPage])
+        onboardingVC?.shouldFadeTransitions = true
+        onboardingVC?.shouldMaskBackground = false
+        
+        onboardingVC?.pageControl.currentPageIndicatorTintColor = UIColor(colorLiteralRed: 239/255.0, green: 88/255.0, blue: 35/255.0, alpha: 1.0)
+        onboardingVC?.pageControl.pageIndicatorTintColor = UIColor.white
+        return onboardingVC!
+    }
+    
     
     
     func setupNormalRootViewController() {
