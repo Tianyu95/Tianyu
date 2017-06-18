@@ -10,7 +10,7 @@ import UIKit
 
 class TYCodeListTableViewController: UITableViewController {
 
-    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示","instagram渐变","k线走势"]
+    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示","instagram渐变","自定义日历库*5","k线走势"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,22 +87,24 @@ class TYCodeListTableViewController: UITableViewController {
             self.navigationController?.pushViewController(pastePage, animated: true)
             
             
+            break
             
-            /*
-             UIStoryboard *story = [UIStoryboard storyboardWithName:@"XMessage" bundle:nil];
-             EZChatVC *page = [story instantiateViewControllerWithIdentifier:@"ezchatvc"];
+        case 5://自定义日历库
+            let story = UIStoryboard(name: "ListStoryboard", bundle: nil)
+            let calendarPage:CalendarListController = story.instantiateViewController(withIdentifier: "calendarlist") as! CalendarListController
+            calendarPage.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(calendarPage, animated: true)
 
-             */
+            break
+        case 6://k线走势
 //            let story = UIStoryboard(name: "ListStoryboard", bundle: nil)
 //            
 //            let stockChatPage:TYStockChatViewController = story.instantiateViewController(withIdentifier: "stockchat") as! TYStockChatViewController
 //            
 //            stockChatPage.hidesBottomBarWhenPushed = true
 //            self.navigationController?.pushViewController(stockChatPage, animated: true)
-
-            break
-        case 5://k线走势
             
+
             break
         default:
             return
