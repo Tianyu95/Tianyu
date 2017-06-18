@@ -10,7 +10,7 @@ import UIKit
 
 class TYCodeListTableViewController: UITableViewController {
 
-    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示"]
+    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示","k线走势"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,8 +79,23 @@ class TYCodeListTableViewController: UITableViewController {
             horsePage.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(horsePage, animated: true)
             
-            
             break
+            
+        case 4://
+            /*
+             UIStoryboard *story = [UIStoryboard storyboardWithName:@"XMessage" bundle:nil];
+             EZChatVC *page = [story instantiateViewControllerWithIdentifier:@"ezchatvc"];
+
+             */
+//            let story = UIStoryboard(name: "ListStoryboard", bundle: nil)
+//            
+//            let stockChatPage:TYStockChatViewController = story.instantiateViewController(withIdentifier: "stockchat") as! TYStockChatViewController
+//            
+//            stockChatPage.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(stockChatPage, animated: true)
+
+            break
+            
         default:
             return
         }
