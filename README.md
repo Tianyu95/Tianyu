@@ -1,6 +1,8 @@
 # Tianyu
 My product
-各种项目集合展示
+
+//项目集合展示
+Swift与OC混用，storyboard混用 HTML、PDF.........
 
 引导页
 ![](https://github.com/Tianyu95/Tianyu/blob/master/Picgif/%E5%BC%95%E5%AF%BC%E9%A1%B5A7%E5%B8%A7.gif "")
