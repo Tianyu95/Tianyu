@@ -39,6 +39,9 @@
 		3DD5C0B71EF640B400527F68 /* space age.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B41EF640B400527F68 /* space age.ttf */; };
 		3DD5C0B81EF640B400527F68 /* sf-outer-limits.upright.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B51EF640B400527F68 /* sf-outer-limits.upright.ttf */; };
 		3DD5C0B91EF640B400527F68 /* nasalization rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5C0B61EF640B400527F68 /* nasalization rg.ttf */; };
+		3DD5C0BD1EF65A5400527F68 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5C0BB1EF65A5400527F68 /* PastelView.swift */; };
+		3DD5C0BE1EF65A5400527F68 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5C0BC1EF65A5400527F68 /* PastelGradient.swift */; };
+		3DD5C0C01EF65ABD00527F68 /* TYPasteGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5C0BF1EF65ABD00527F68 /* TYPasteGradientViewController.swift */; };
 		3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */; };
 		3DF6BB081E44271200EC33D9 /* TYMyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */; };
 		3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6BB091E44276400EC33D9 /* TYNameTableViewController.swift */; };
@@ -85,6 +88,9 @@
 		3DD5C0B41EF640B400527F68 /* space age.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "space age.ttf"; sourceTree = "<group>"; };
 		3DD5C0B51EF640B400527F68 /* sf-outer-limits.upright.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-outer-limits.upright.ttf"; sourceTree = "<group>"; };
 		3DD5C0B61EF640B400527F68 /* nasalization rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nasalization rg.ttf"; sourceTree = "<group>"; };
+		3DD5C0BB1EF65A5400527F68 /* PastelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastelView.swift; sourceTree = "<group>"; };
+		3DD5C0BC1EF65A5400527F68 /* PastelGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastelGradient.swift; sourceTree = "<group>"; };
+		3DD5C0BF1EF65ABD00527F68 /* TYPasteGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYPasteGradientViewController.swift; sourceTree = "<group>"; };
 		3DF6BB041E4425E500EC33D9 /* TYMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMeTableViewController.swift; sourceTree = "<group>"; };
 		3DF6BB071E44271200EC33D9 /* TYMyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMyProfileTableViewController.swift; sourceTree = "<group>"; };
 		3DF6BB091E44276400EC33D9 /* TYNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYNameTableViewController.swift; sourceTree = "<group>"; };
@@ -233,9 +239,20 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		3DD5C0BA1EF65A3300527F68 /* PasteView */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5C0BB1EF65A5400527F68 /* PastelView.swift */,
+				3DD5C0BC1EF65A5400527F68 /* PastelGradient.swift */,
+				3DD5C0BF1EF65ABD00527F68 /* TYPasteGradientViewController.swift */,
+			);
+			path = PasteView;
+			sourceTree = "<group>";
+		};
 		3DF6BAF91E44234400EC33D9 /* CodeList */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5C0BA1EF65A3300527F68 /* PasteView */,
 				3D71442B1EF35DCD005FB882 /* HorseRaceLamp */,
 				3DA8817B1EEFAC0700D995D8 /* Suofang */,
 				3D9D74641EE10AC7001B87F0 /* SetAuthorization */,
@@ -375,10 +392,12 @@
 				3D9D74661EE10AE0001B87F0 /* TYSetAuthorizationViewController.swift in Sources */,
 				3D40FEDA1E44CC3C005613C9 /* TYWhatUpTableViewController.swift in Sources */,
 				3DA8817F1EEFAC5200D995D8 /* TYSuofangViewController.swift in Sources */,
+				3DD5C0C01EF65ABD00527F68 /* TYPasteGradientViewController.swift in Sources */,
 				3DD5C0AC1EF616F200527F68 /* OnboardingViewController.m in Sources */,
 				3D5C740E1EF51E730029D521 /* TYWebViewController.swift in Sources */,
 				3DF6BB051E4425E500EC33D9 /* TYMeTableViewController.swift in Sources */,
 				3DD50FC91E9C7C620024927B /* TYProfilePhotoViewController.swift in Sources */,
+				3DD5C0BE1EF65A5400527F68 /* PastelGradient.swift in Sources */,
 				3DF6BB0A1E44276400EC33D9 /* TYNameTableViewController.swift in Sources */,
 				3DF6BB081E44271200EC33D9 /* TYMyProfileTableViewController.swift in Sources */,
 				3D392DAD1E4184EB00ED5FCC /* AppDelegate.swift in Sources */,
@@ -387,6 +406,7 @@
 				3D1C98091EDEA9F80077D1D2 /* TYFirstPageViewController.swift in Sources */,
 				3DFA5D461EDFF5E100E6480B /* TYTouchIdAuthenViewController.swift in Sources */,
 				3DA343FE1EDFE025007626E3 /* TYCodeListTableViewController.swift in Sources */,
+				3DD5C0BD1EF65A5400527F68 /* PastelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

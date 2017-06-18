@@ -10,7 +10,7 @@ import UIKit
 
 class TYCodeListTableViewController: UITableViewController {
 
-    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示","k线走势"]
+    let listName = ["指纹解锁","获取系统权限","缩放动画","跑马灯展示","instagram渐变","k线走势"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +81,13 @@ class TYCodeListTableViewController: UITableViewController {
             
             break
             
-        case 4://
+        case 4://instagram渐变
+            let pastePage = TYPasteGradientViewController()
+            pastePage.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(pastePage, animated: true)
+            
+            
+            
             /*
              UIStoryboard *story = [UIStoryboard storyboardWithName:@"XMessage" bundle:nil];
              EZChatVC *page = [story instantiateViewControllerWithIdentifier:@"ezchatvc"];
@@ -94,13 +100,10 @@ class TYCodeListTableViewController: UITableViewController {
 //            stockChatPage.hidesBottomBarWhenPushed = true
 //            self.navigationController?.pushViewController(stockChatPage, animated: true)
 
-            let firstPage = OnboardingContentViewController(title: "Page Title", body: "Page body goes here.", image: UIImage(named: "icon"), buttonText: "Text For Button") { () -> Void in
-                // do something here when users press the button, like ask for location services permissions, register for push notifications, connect to social media, or finish the onboarding process
-            }
-
-            self.navigationController?.pushViewController(firstPage, animated: true)
             break
+        case 5://k线走势
             
+            break
         default:
             return
         }
