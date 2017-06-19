@@ -40,8 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //            self.window?.rootViewController = guideVC
 
-//            self.window?.rootViewController = self.generateStandardOnboardingVC()
-            self.window?.rootViewController = self.generateMovieOnboardingVC()
+            self.window?.rootViewController = self.generateStandardOnboardingVC()
+//            self.window?.rootViewController = self.generateMovieOnboardingVC()
         }
         
         
@@ -89,9 +89,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let file = Bundle.main.path(forResource: "video3", ofType: "mp4")
 //        let movieURL = URL.init(fileURLWithPath: file!)
         let movieURL = NSURL(fileURLWithPath: file!)
-        
+
         let onboardingVC = OnboardingViewController(backgroundVideoURL: movieURL as URL!, contents: [firstPage, secondPage, thirdPage])
-        
+        onboardingVC?.shouldFadeTransitions = true
+
         return onboardingVC!
     }
     
