@@ -6,6 +6,7 @@ Swift与OC混用，storyboard混用 HTML、PDF.........
 
 引导页
 ![](https://github.com/Tianyu95/Tianyu/blob/master/Picgif/%E5%BC%95%E5%AF%BC%E9%A1%B5A7%E5%B8%A7.gif "")
+![](https://github.com/Tianyu95/Tianyu/blob/master/Picgif/%E5%BC%95%E5%AF%BC%E9%A1%B5B.gif "")
 
 轮播 label走马灯
 ![](https://github.com/Tianyu95/Tianyu/blob/master/Picgif/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%89%87%E5%92%8Clabel.gif)
