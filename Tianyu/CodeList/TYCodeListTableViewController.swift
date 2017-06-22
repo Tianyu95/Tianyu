@@ -22,7 +22,8 @@ class TYCodeListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
-        print(listName)
+        self.tableView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -112,6 +113,27 @@ class TYCodeListTableViewController: UITableViewController {
         
         print(indexPath.row)
     }
+    
+    
+    /**
+     *  监听属性值发生改变时回调
+     */
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        let offset: CGFloat = self.tableView.contentOffset.y
+        var delta : CGFloat = offset / 64.0 + 1.0
+        print("aaa = \(delta)")
+        delta = max(0, delta)
+        print("max delta = \(delta)")
+        print("-----min delta = \(min(1, delta))")
+
+        let mmm: CGFloat = min(1, delta)
+        
+        self.navigationController?.navigationBar.backgroundColor = UIColor(colorLiteralRed: Float(mmm), green: 205.0/255.0, blue: Float(mmm), alpha: 1.0)
+        
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
